@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "PantryPalNew",
+    "slug": "PantryPalNew",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/JarOnly.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/JarOnly.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to scan barcodes for adding items to your pantry.",
+        "NSPhotoLibraryUsageDescription": "This app accesses your photo library to let you add images of your pantry items.",
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "bundleIdentifier": "com.aryanpatel930.PantryPalNew"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/JarOnly.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/JarOnly.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow PantryPalNew to access camera to scan barcodes."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you add images of your pantry items."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "2d637ebd-18e4-434d-9c15-1d73b2d197d2"
+      }
+    }
+  }
+}
