@@ -218,3 +218,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
 });
+
+// Note: This file is the main entry point for the PantryPal app.
+// It sets up the navigation, theming, and authentication context for the app.
